@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Esempio di Video WebVTT</title>
+  <meta name="keywords" content="html5, webvtt, webvtt example">
+  <meta name="author" content="Salvatore Vanini">
+  <meta name="description" content="Codice HTML5 di esempio che utilizza un file WebVTT per aggiungere sottotitoli ad un video">
+  <style>
+    * {
+      margin: 20px 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Demo Video HTML5 con sottotitoli in formato WebVTT</h1>
+  </header>
+  <section>
+    <p>Questo video usa il seguente <a href="./MIB2-subtitles-pt-BR.vtt" target="_blank">WebVTT file</a>.</p>
+    <video width="600" height="400" controls>
+      <source src="./MIB2.mp4" type="video/mp4">
+      <!--<source src="./MIB2.webm" type="video/webm">-->
+      <track label="pt" kind="subtitles" srclang="it" src="./MIB2-subtitles-pt-BR.vtt" default />
+    </video>
+  </section>
+  <footer>
+    <p>by <a href="https://github.com/svanini/WebVTT" target="_blank">Video</a></p>
+  </footer>
+</body>
+</html>
